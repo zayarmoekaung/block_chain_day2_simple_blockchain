@@ -8,9 +8,9 @@ class Main:
     def __init__(self):
         #initialize Main oblect with new block chain
         print("#### Simple BlockChain ####")
-        diffadj = getBooleanInput("Do You want to adjust difficulity ? (default = 1 ) :")
+        diffadj = getBooleanInput("Do You want to adjust difficulty ? (default = 1 ) :")
         if diffadj:
-            self.difficulty = getNumberInput("set your difficulity :")
+            self.difficulty = getNumberInput("set your difficulty :")
         print("Initializing BlockChain....\n")
         printLine()
         self.blockchain = Blockchain(self.difficulty)
